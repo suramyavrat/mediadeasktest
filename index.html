@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>X Y Graph</title>
+  <link href='index.css' rel=stylesheet>
+</head>
+
+<body>
+<div>
+  <form class="center input" id='form' style="float: left;padding: 20px">
+    y = <input type="text" id="functionTextBox">
+    <button type=submit>Graph!</button>
+  </form>
+</div>
+<div style="clear: both">
+  <form type="text" id="numberBoxForm" style="float: left;padding: 20px">
+    <input type="text" id="numberBox">
+    <button type=submit>Calculate</button>
+  </form>
+  <div id='messageBanner' style="float: left; padding: 20px"></div>
+</div>
+<div style="clear: both">
+    <form type="text" id="numberBoxSecondForm" style="float: left;padding: 20px">
+        <input type="text" id="numberBoxSecond">
+        <button type=submit>Find</button>
+    </form>
+    <div id='lastNumber' style="float: left; padding: 20px"></div>
+</div>
+  <div style="float: left; padding: 10px">
+    <canvas id="myCanvas" width="640" height="540"></canvas>
+  </div>
+
+  <script  src="./calculator.js"></script>
+  <script  src="./peter.js"></script>
+  <script src="./equation.js"></script>
+  <script src="./grid.js"></script>
+  <script  src="./index.js"></script>
+</body>
+
+</html>
